@@ -21,8 +21,7 @@ platform :ios do
     scan(
       devices: ["iPhone 14"],
       scheme: "test_fastlane_reports",
-      ensure_devices_found: true,
-      open_report: true
+      ensure_devices_found: true
     )
   end
 end
