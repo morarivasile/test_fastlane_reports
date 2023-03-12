@@ -19,11 +19,15 @@ final class ViewControllerTests: XCTestCase {
 		super.setUp()
 		
 		sut = UIStoryboard(name: "Main", bundle: .main).instantiateInitialViewController()
+		sut.loadViewIfNeeded()
 	}
 	
-	func testSnapshot() {
+	func testInitialStateSnapshot() {
+		assertSnapshot(matching: sut, as: .image)
+	}
+	
+	func testCustomStateSnapshot() {
 		// when
-		sut.loadViewIfNeeded()
 		sut.setText("TESTING")
 		
 		// then
