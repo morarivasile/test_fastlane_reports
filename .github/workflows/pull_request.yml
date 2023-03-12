@@ -9,5 +9,7 @@ jobs:
     runs-on: macos-latest
     steps:
     - uses: actions/checkout@v3
+    - name: Install dependencies
+      run: bundle exec fastlane installDependencies
     - name: Run Unit Tests
       run: bundle exec fastlane unitTestLane

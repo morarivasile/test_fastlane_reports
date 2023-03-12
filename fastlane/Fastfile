@@ -16,6 +16,12 @@
 default_platform(:ios)
 
 platform :ios do
+  desc "Install dependencies!"
+  lane :installDependencies do
+    sh("bundle", "install")
+    sh("bundle", "update")
+  end
+
   desc "Run all the tests in the world!"
   lane :unitTestLane do
     scan(
