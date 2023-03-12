@@ -28,7 +28,7 @@ final class ViewControllerTests: XCTestCase {
 	
 	func testCustomStateSnapshot() {
 		// when
-		sut.setText("TESTIN")
+		sut.setText("TESTING")
 		
 		// then
 		assertSnapshot(matching: sut, as: .image)
