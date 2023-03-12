@@ -13,8 +13,8 @@
 		C36B53E329BE716F00A682F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C36B53E129BE716F00A682F4 /* Main.storyboard */; };
 		C36B53E529BE717100A682F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C36B53E429BE717100A682F4 /* Assets.xcassets */; };
 		C36B53E829BE717100A682F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C36B53E629BE717100A682F4 /* LaunchScreen.storyboard */; };
-		C36B53F329BE717100A682F4 /* test_fastlane_reportsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36B53F229BE717100A682F4 /* test_fastlane_reportsTests.swift */; };
-		C36B540D29BE72BD00A682F4 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = C36B540C29BE72BD00A682F4 /* SnapshotTesting */; };
+		C36B540F29BE736600A682F4 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36B540E29BE736600A682F4 /* ViewControllerTests.swift */; };
+		C36B541229BE74F000A682F4 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = C36B541129BE74F000A682F4 /* SnapshotTesting */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,7 @@
 		C36B53E729BE717100A682F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C36B53E929BE717100A682F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C36B53EE29BE717100A682F4 /* test_fastlane_reportsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = test_fastlane_reportsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C36B53F229BE717100A682F4 /* test_fastlane_reportsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test_fastlane_reportsTests.swift; sourceTree = "<group>"; };
+		C36B540E29BE736600A682F4 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +45,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C36B540D29BE72BD00A682F4 /* SnapshotTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C36B541229BE74F000A682F4 /* SnapshotTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,7 +94,7 @@
 		C36B53F129BE717100A682F4 /* test_fastlane_reportsTests */ = {
 			isa = PBXGroup;
 			children = (
-				C36B53F229BE717100A682F4 /* test_fastlane_reportsTests.swift */,
+				C36B540E29BE736600A682F4 /* ViewControllerTests.swift */,
 			);
 			path = test_fastlane_reportsTests;
 			sourceTree = "<group>";
@@ -116,7 +116,6 @@
 			);
 			name = test_fastlane_reports;
 			packageProductDependencies = (
-				C36B540C29BE72BD00A682F4 /* SnapshotTesting */,
 			);
 			productName = test_fastlane_reports;
 			productReference = C36B53D829BE716F00A682F4 /* test_fastlane_reports.app */;
@@ -136,6 +135,9 @@
 				C36B53F029BE717100A682F4 /* PBXTargetDependency */,
 			);
 			name = test_fastlane_reportsTests;
+			packageProductDependencies = (
+				C36B541129BE74F000A682F4 /* SnapshotTesting */,
+			);
 			productName = test_fastlane_reportsTests;
 			productReference = C36B53EE29BE717100A682F4 /* test_fastlane_reportsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -169,7 +171,7 @@
 			);
 			mainGroup = C36B53CF29BE716F00A682F4;
 			packageReferences = (
-				C36B540B29BE72BD00A682F4 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
+				C36B541029BE74F000A682F4 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
 			);
 			productRefGroup = C36B53D929BE716F00A682F4 /* Products */;
 			projectDirPath = "";
@@ -216,7 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C36B53F329BE717100A682F4 /* test_fastlane_reportsTests.swift in Sources */,
+				C36B540F29BE736600A682F4 /* ViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,7 +495,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		C36B540B29BE72BD00A682F4 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+		C36B541029BE74F000A682F4 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing";
 			requirement = {
@@ -504,9 +506,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		C36B540C29BE72BD00A682F4 /* SnapshotTesting */ = {
+		C36B541129BE74F000A682F4 /* SnapshotTesting */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = C36B540B29BE72BD00A682F4 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			package = C36B541029BE74F000A682F4 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
 			productName = SnapshotTesting;
 		};
 /* End XCSwiftPackageProductDependency section */
