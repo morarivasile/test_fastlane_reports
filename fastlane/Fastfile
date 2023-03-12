@@ -19,7 +19,7 @@ platform :ios do
   desc "Run all the tests in the world!"
   lane :unitTestLane do
     scan(
-      devices: ["iPhone 13"],
+      devices: ["iPhone 14"],
       scheme: "test_fastlane_reports",
       ensure_devices_found: true
     )
